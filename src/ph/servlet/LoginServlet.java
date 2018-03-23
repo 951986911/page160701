@@ -11,7 +11,7 @@ import ph.dao.UserDAO;
 import ph.po.User;
 
 //@javax.servlet.annotation.WebServlet(name = "LoginServlet")
-@javax.servlet.annotation.WebServlet( "/LoginServlet")
+@javax.servlet.annotation.WebServlet("/LoginServlet")
 public class LoginServlet extends javax.servlet.http.HttpServlet
 {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException
@@ -62,10 +62,6 @@ public class LoginServlet extends javax.servlet.http.HttpServlet
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException
     {
-        //do nothing
-    }
 
-    protected void doNothing()
-    {
     }
 }

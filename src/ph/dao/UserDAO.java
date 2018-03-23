@@ -67,11 +67,11 @@ public class UserDAO
             rs=ps.executeQuery();
             if(rs.next()){//如果if为true  表示找到了记录  此时才需要进行User对象的初始化(new User())以及 数据封装(setXxx)
                 user=new User();
-                user.setAddress(rs.getString("address"));;
                 user.setId(rs.getInt("id"));
+                user.setRole(rs.getString("role"));
                 user.setName(rs.getString("name"));
                 user.setPwd(rs.getString("pwd"));
-                user.setRole(rs.getString("role"));
+                user.setAddress(rs.getString("address"));;
                 user.setTel(rs.getString("tel"));
             }
 
